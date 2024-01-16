@@ -31,4 +31,8 @@ export const SpanStyled = styled.div`
     color: #0b46bb;
     text-shadow: 2px -2px 8px rgba(102, 204, 255, 0.5);
   }
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
 `;

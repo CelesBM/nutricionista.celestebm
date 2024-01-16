@@ -28,6 +28,18 @@ export const HomeIconStyled = styled.div`
   &:hover {
     color: #1252d0;
   }
+
+  @media (min-width: 500px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1250px) {
+    font-size: 50px;
+  }
 `;
 
 export const HamburgerIconStyled = styled.div`
@@ -41,6 +53,14 @@ export const HamburgerIconStyled = styled.div`
 
   &:hover {
     color: #1252d0;
+  }
+
+  @media (min-width: 500px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 40px;
   }
 
   @media (min-width: 768px) {
@@ -69,5 +89,13 @@ export const SpanStyled = styled.div`
   @media (min-width: 768px) {
     display: flex;
     font-size: 16px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1250px) {
+    font-size: 19px;
   }
 `;

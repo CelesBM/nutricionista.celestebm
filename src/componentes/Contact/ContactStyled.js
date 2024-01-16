@@ -10,9 +10,39 @@ export const ContainerContactStyled = styled.section`
   text-align: center;
   padding: 30px;
 
+  @media (min-width: 600px) {
+    height: 600px;
+  }
+
+  @media (min-width: 900px) {
+    padding: 30px 80px;
+  }
+
+  @media (min-width: 1250px) {
+    height: 650px;
+    padding: 30px 120px;
+  }
+
+  @media (min-width: 1300px) {
+    height: 650px;
+    padding: 30px 150px;
+  }
+
   h2 {
     font-size: 20px;
     color: #2f70f1;
+  }
+
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    h2 {
+      font-size: 28px;
+    }
   }
 `;
 
@@ -30,9 +60,25 @@ export const DataFormStyled = styled.div`
   justify-content: center;
   gap: 5px;
 
+  @media (min-width: 1250px) {
+    gap: 10px;
+  }
+
   label {
     font-size: 15px;
     color: #2f70f1;
+  }
+
+  @media (min-width: 600px) {
+    label {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    label {
+      font-size: 19px;
+    }
   }
 
   input,
@@ -49,6 +95,14 @@ export const DataFormStyled = styled.div`
   textarea {
     height: 80px;
   }
+
+  @media (min-width: 600px) {
+    input,
+    textarea {
+      padding: 8px 12px;
+      width: 100%;
+    }
+  }
 `;
 
 export const ButtonContactStyled = styled.button`
@@ -61,4 +115,14 @@ export const ButtonContactStyled = styled.button`
   border: solid 1px #2f70f1;
   border-radius: 1rem;
   color: #2f70f1;
+
+  @media (min-width: 600px) {
+    font-size: 17px;
+    padding: 12px 50px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 19px;
+    padding: 12px 60px;
+  }
 `;
