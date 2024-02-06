@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ContainerHeaderStyled = styled.header`
   background-color: #fff;
@@ -66,6 +67,17 @@ export const HamburgerIconStyled = styled.div`
   @media (min-width: 768px) {
     display: none;
   }
+`;
+
+export const LinkHeaderStyled = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const LinkHomeStyled = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: #2f70f1;
 `;
 
 export const ContainerLinksStyled = styled.header`

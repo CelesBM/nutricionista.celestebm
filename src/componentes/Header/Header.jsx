@@ -6,6 +6,8 @@ import {
   ContainerHeaderStyled,
   HomeIconStyled,
   HamburgerIconStyled,
+  LinkHomeStyled,
+  LinkHeaderStyled,
   ContainerLinksStyled,
   SpanStyled,
 } from "./HeaderStyles";
@@ -24,20 +26,28 @@ const Header = () => {
   return (
     <ContainerHeaderStyled>
       <HomeIconStyled>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-          <IoHome />
-        </motion.div>
+        <LinkHomeStyled to="/Home">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+            <IoHome />
+          </motion.div>
+        </LinkHomeStyled>
       </HomeIconStyled>
       <ContainerLinksStyled>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-          <SpanStyled>Sobre mí</SpanStyled>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-          <SpanStyled>Servicios</SpanStyled>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-          <SpanStyled>Recetario</SpanStyled>
-        </motion.div>
+        <LinkHeaderStyled to="/About">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+            <SpanStyled>Sobre mí</SpanStyled>
+          </motion.div>
+        </LinkHeaderStyled>
+        <LinkHeaderStyled to="/Services">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+            <SpanStyled>Servicios</SpanStyled>
+          </motion.div>
+        </LinkHeaderStyled>
+        <LinkHeaderStyled to="/Recetary">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+            <SpanStyled>Recetario</SpanStyled>
+          </motion.div>
+        </LinkHeaderStyled>
       </ContainerLinksStyled>
       <HamburgerIconStyled onClick={handleMenuToggle}>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>

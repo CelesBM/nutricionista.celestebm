@@ -1,6 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ContainerHamburgerStyled, SpanStyled } from "./HamburgerMenuStyles";
+import {
+  ContainerHamburgerStyled,
+  SpanStyled,
+  LinkHamburgerStyled,
+} from "./HamburgerMenuStyles";
 
 const HamburgerMenu = ({ isOpen, handleClose }) => {
   return (
@@ -12,15 +17,21 @@ const HamburgerMenu = ({ isOpen, handleClose }) => {
           exit={{ x: "100%" }}
           transition={{ type: "tween", duration: 1 }}
         >
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-            <SpanStyled>Sobre mí</SpanStyled>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-            <SpanStyled>Servicios</SpanStyled>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-            <SpanStyled>Recetario</SpanStyled>
-          </motion.div>
+          <LinkHamburgerStyled to="/About">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+              <SpanStyled>Sobre mí</SpanStyled>
+            </motion.div>
+          </LinkHamburgerStyled>
+          <LinkHamburgerStyled to="/Services">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+              <SpanStyled>Servicios</SpanStyled>
+            </motion.div>
+          </LinkHamburgerStyled>
+          <LinkHamburgerStyled to="/Recetary">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+              <SpanStyled>Recetario</SpanStyled>
+            </motion.div>
+          </LinkHamburgerStyled>
         </ContainerHamburgerStyled>
       </AnimatePresence>
     </>

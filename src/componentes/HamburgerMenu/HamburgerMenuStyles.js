@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const ContainerHamburgerStyled = styled(motion.div)`
   background-color: #bdd3fd;
@@ -35,4 +36,9 @@ export const SpanStyled = styled.div`
   @media (min-width: 600px) {
     font-size: 16px;
   }
+`;
+
+export const LinkHamburgerStyled = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
 `;
