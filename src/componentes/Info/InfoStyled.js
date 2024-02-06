@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ContainerInfoStyled = styled.section`
   display: flex;
@@ -59,8 +60,9 @@ export const ContainerInfoStyled = styled.section`
   }
 `;
 
-export const ButtonInfoStyled = styled.button`
+export const ButtonInfoStyled = styled(Link)`
   cursor: pointer;
+  text-decoration: none;
   background-color: #bdd3fd;
   font-size: 15px;
   font-weight: 600;

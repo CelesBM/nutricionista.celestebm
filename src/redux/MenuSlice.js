@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isMenuOpen: false,
+  scrollTop: 0,
 };
 
 const menuSlice = createSlice({
@@ -11,8 +12,12 @@ const menuSlice = createSlice({
     toggleMenu: (state) => {
       state.isMenuOpen = !state.isMenuOpen;
     },
+    setScrollTop: (state, action) => {
+      state.scrollTop = action.payload;
+    },
   },
 });
 
-export const { toggleMenu } = menuSlice.actions;
+export const { toggleMenu, setScrollTop } = menuSlice.actions;
+export const selectIsMenuOpen = (state) => state.menu.isMenuOpen;
 export default menuSlice.reducer;

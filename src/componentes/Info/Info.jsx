@@ -18,7 +18,7 @@ const Info = () => {
           disponibles!
         </p>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
-          <ButtonInfoStyled>Ver Servicios</ButtonInfoStyled>
+          <ButtonInfoStyled to="/Services">Ver Servicios</ButtonInfoStyled>
         </motion.div>
       </ContainerInfoStyled>
     </>

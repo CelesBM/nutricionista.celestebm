@@ -5,7 +5,11 @@ const Hero = () => {
   return (
     <>
       <ContainerHeroStyled>
-        <ContainerTextStyled>
+        <ContainerTextStyled
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2, delay: 0.6 }}
+        >
           <h2>Hola, soy Celeste!</h2>
           <p>
             Si estás buscando un cambio en tu alimentación, rendimiento y/o

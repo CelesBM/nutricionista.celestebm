@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ContainerHeroStyled = styled.section`
   background-image: url("https://i.blogs.es/787087/nutricion-deportiva/1366_2000.jpg");
@@ -31,7 +32,7 @@ export const ContainerHeroStyled = styled.section`
   }
 `;
 
-export const ContainerTextStyled = styled.div`
+export const ContainerTextStyled = styled(motion.div)`
   background-color: #bdd3fd;
   display: flex;
   flex-direction: column;
