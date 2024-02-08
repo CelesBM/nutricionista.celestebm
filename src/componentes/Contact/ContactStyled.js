@@ -6,7 +6,7 @@ export const ContainerContactStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  height: 500px;
+  height: 600px;
   text-align: center;
   padding: 30px;
 
@@ -88,8 +88,8 @@ export const DataFormStyled = styled.div`
     width: 100%;
     border: solid 1px #fff;
     border-radius: 4px;
-    margin-bottom: 15px;
     color: #2f70f1;
+    margin-bottom: 15px;
   }
 
   textarea {
@@ -124,5 +124,15 @@ export const ButtonContactStyled = styled.button`
   @media (min-width: 900px) {
     font-size: 19px;
     padding: 12px 60px;
+  }
+`;
+
+export const ErrorStyled = styled.div`
+  color: red;
+  font-size: 10px;
+  margin-bottom: 15px;
+
+  @media (min-width: 600px) {
+    font-size: 13px;
   }
 `;
